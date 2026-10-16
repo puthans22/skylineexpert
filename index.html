@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKYLINEEXPERT STORE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .logo {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        header h1 {
+            font-size: 2rem;
+            color: #111;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+        header p {
+            color: #6c757d;
+            font-size: 1rem;
+            margin-top: 5px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .product-card {
+            background: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            background-color: #eaeaea;
+        }
+        .product-info {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .product-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #212529;
+            margin-bottom: 8px;
+        }
+        .product-price {
+            font-size: 1.3rem;
+            color: #e63946;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        .product-desc {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        .btn-order {
+            display: block;
+            text-align: center;
+            background-color: #25d366;
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .btn-order:hover {
+            background-color: #20ba5a;
+        }
+        footer {
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+        }
+        footer p {
+            font-size: 0.9rem;
+            color: #adb5bd;
+        }
+        .wa-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HALAMAN DEPAN / HEADER -->
+    <header>
+        <!-- Ganti 'logo.png' dengan file gambar logo bersayap hitam Anda -->
+        <img src="logo.png" alt="Logo SKYLINEEXPERT STORE" class="logo">
+        <h1>SKYLINEEXPERT STORE</h1>
+        <p>Koleksi Pakaian & Aksesoris Premium Militer Eksklusif</p>
+    </header>
+
+    <!-- DAFTAR PRODUK -->
+    <div class="container">
+        <div class="product-grid">
+
+            <!-- Produk 1 -->
+            <div class="product-card">
+                <img src="koleksi1.png" alt="The Flying Saint Gatotkaca Bomber" class="product-img">
+                <div class="product-info">
+                    <h2 class="product-title">The Flying Saint Gatotkaca Bomber (Black)</h2>
+                    <div class="product-price">US$125</div>
+                    <p class="product-desc">Koleksi khusus Mahabarata. Jaket bomber klasik tahan air dengan bordir premium kualitas tinggi di bagian depan dan belakang. Dilengkapi kantong internal fungsional.</p>
+                    <a href="https://wa.me" target="_blank" class="btn-order">Order via WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- Produk 2 -->
+            <div class="product-card">
+                <img src="koleksi2.png" alt="The Westside22 Bomber Jacket" class="product-img">
+                <div class="product-info">
+                    <h2 class="product-title">The Westside22 Bomber Jacket</h2>
+                    <div class="product-price">US$95</div>
+                    <p class="product-desc">Tersedia dalam warna: Sage Green & Black. Desain standar militer seri B-52 dengan patch skuadron ikonik, bahan nilon premium, dan kantong utilitas MA-1 di lengan.</p>
+                    <a href="https://wa.me" target="_blank" class="btn-order">Order via WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- Produk 3 -->
+            <div class="product-card">
+                <img src="koleksi3.png" alt="Westside22 Puffer Jacket" class="product-img">
+                <div class="product-info">
+                    <h2 class="product-title">Westside22 Puffer Jacket (Blue Black)</h2>
+                    <div class="product-price">US$55</div>
+                    <p class="product-desc">Jaket puffer unisex yang dirancang untuk kenyamanan maksimal dan kehangatan tingkat tinggi. Dilengkapi patch logo bordir dan dua kantong luar beritsleting.</p>
+                    <a href="https://wa.me" target="_blank" class="btn-order">Order via WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- Produk 4 -->
+            <div class="product-card">
+                <img src="koleksi4.png" alt="Westside22 Puffer Vest" class="product-img">
+                <div class="product-info">
+                    <h2 class="product-title">Westside22 Puffer Vest (Blue Black)</h2>
+                    <div class="product-price">US$35</div>
+                    <p class="product-desc">Rompi puffer praktis dengan tudung (hoodie) yang bisa dilepas-pasang. Sangat cocok dipakai harian untuk tampilan kasual dan taktis.</p>
+                    <a href="https://wa.me" target="_blank" class="btn-order">Order via WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- Produk 5 -->
+            <div class="product-card">
+                <img src="koleksi5.png" alt="Skyline Expert X-Pose Totebag" class="product-img">
+                <div class="product-info">
+                    <h2 class="product-title">Skyline Expert X-Pose Totebag (Black)</h2>
+                    <div class="product-price">US$75</div>
+                    <p class="product-desc">Tas serbaguna tahan air (Water Resistant) yang bisa digunakan sebagai Backpack, Sling bag, atau Arm Handled. Kapasitas besar 40 x 50 x 12 cm dengan cetakan logo depan-belakang.</p>
+                    <a href="https://wa.me" target="_blank" class="btn-order">Order via WhatsApp</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- TOMBOL WA MELAYANG -->
+    <a href="https://wa.me" target="_blank" class="wa-float">💬 Chat Admin</a>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 SKYLINEEXPERT STORE. All Rights Reserved.</p>
+        <p>Hubungi kami: +62 878-8504-2397</p>
+    </footer>
+
+</body>
+</html>
